@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f52466adb12c84aab2acb7d46f743930",
+    "revision": "6053adb6a7c22449f90c17fec9538f3e",
     "url": "/react-15-puzzle/index.html"
   },
   {
