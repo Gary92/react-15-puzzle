@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it-IT">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#C18FF0">
-	<link rel="manifest" href="/public/manifest.json">
-	<link rel="shortcut icon" href="/public/favicon.ico">
+	<link rel="manifest" href="/react-15-puzzle/manifest.json">
+	<link rel="icon" href="/react-15-puzzle/favicon.ico">
 	<title>Gioco del 15</title>
 </head>
 
@@ -15,29 +15,20 @@
 		You need to enable JavaScript to run this app.
 	</noscript>
 	<div id="root"></div>
-	<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    
+	
   <!-- register service worker -->
   <script>
-    if ('serviceWorker' in navigator)
-    {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/service-worker.js')
-      .then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
+    if ('serviceWorker' in navigator) {
+      console.log("Will the service worker register?");
+      navigator.serviceWorker.register('/react-15-puzzle/sw.js', {scope: '/react-15-puzzle/'})
+        .then(function(reg){
+          console.log("Yes, it did.");
+        }).catch(function(err) {
+          console.log("No it didn't. This happened: ", err)
+        });
     }
-    );
-  }
   </script>
-<!-- end of service worker -->
+  <!-- end of service worker -->
 </body>
 
 </html>

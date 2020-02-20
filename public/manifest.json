@@ -4,12 +4,12 @@
     "lang": "it-IT",
     "icons": [
       {
-        "src": "/images/icons-192.png",
+        "src": "/react-15-puzzle/images/icons-192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/images/icons-512.png",
+        "src": "/react-15-puzzle/images/icons-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
