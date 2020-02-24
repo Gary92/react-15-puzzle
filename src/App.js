@@ -211,7 +211,7 @@ function Board(props) {
   return <div className="board">{boardRows}</div>;
 }
 
-// ======== TILE ========
+// ======== BOARD TILE ========
 
 function BoardTile(props) {
   let visible = "",
